@@ -20,24 +20,26 @@ document.getElementById("numberofGuess").innerHTML= `<p>Guess #: ${count}</p>`;
 
     let userNumber = document.getElementById('numberGuess').value; 
 
-    if( difference(randomNumber,userNumber) == 0) {
-        document.getElementById("typeofGuess").innerHTML ="Correct!";
+    if( userNumber > 100 || userNumber < 1) {
+        document.getElementById("typeofGuess").innerHTML ="Not Valid";
     } 
-    if( difference(randomNumber,userNumber) > 50) {
+    
+    else if( difference(randomNumber,userNumber) > 50) {
         document.getElementById("typeofGuess").innerHTML ="Freezing!";
     } 
-    if( difference(randomNumber,userNumber) >20 && difference(randomNumber,userNumber) <49) {
+    else if( difference(randomNumber,userNumber) >20 && difference(randomNumber,userNumber) <49) {
         document.getElementById("typeofGuess").innerHTML ="Cold!";
     } 
-    if( difference(randomNumber,userNumber) >10 && difference(randomNumber,userNumber) <19) {
+    else if( difference(randomNumber,userNumber) >10 && difference(randomNumber,userNumber) <19) {
         document.getElementById("typeofGuess").innerHTML ="Warm!";
     } 
-    if( difference(randomNumber,userNumber) >5 && difference(randomNumber,userNumber) <9) {
+    else if( difference(randomNumber,userNumber) >5 && difference(randomNumber,userNumber) <9) {
         document.getElementById("typeofGuess").innerHTML ="Hot!";
     } 
-    if( difference(randomNumber,userNumber) <4 && difference(randomNumber,userNumber) > 1 ) {
+    else if( difference(randomNumber,userNumber) <4 && difference(randomNumber,userNumber) > 1 ) {
         document.getElementById("typeofGuess").innerHTML ="Boiling!";
     } 
+    
     
 }
 
