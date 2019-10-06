@@ -23,7 +23,9 @@ document.getElementById("numberofGuess").innerHTML= `<p>Guess #: ${count}</p>`;
     if( userNumber > 100 || userNumber < 1) {
         document.getElementById("typeofGuess").innerHTML ="Not Valid";
     } 
-    
+    else if( difference(randomNumber,userNumber) == 0) {
+        document.getElementById("typeofGuess").innerHTML ="Correct!";
+    }
     else if( difference(randomNumber,userNumber) > 50) {
         document.getElementById("typeofGuess").innerHTML ="Freezing!";
     } 

@@ -4,7 +4,7 @@ body{
 
 .header {
   padding: 20px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -43,7 +43,7 @@ body{
   padding: 10px;
   margin-top: 20px;
   width: 230px;
-  border: 2px solid black;
+  border: 1px solid black;
   margin-right: 10px;
 
 }
@@ -52,7 +52,7 @@ body{
   padding: 10px;
   margin-top: 20px;
   width: 100%;
-  border: 2px solid black;
+  border: 1px solid black;
   margin-right: 10px;
 
 }
@@ -62,12 +62,6 @@ body{
   margin-top: 20px;
 }
 
-.footer {
-  padding:20px;
-  text-align: center;
-  background: white;
-  margin-top: 20px;
-}
 .date-text {
   color: blue;
 }
@@ -95,7 +89,7 @@ nav a {
  text-align: center;
  text-decoration: none;
  display: inline-block;
- border: 2px solid black;
+ border: 1px solid black;
 }
 
 .buttonStack {
