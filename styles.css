@@ -6,8 +6,7 @@ body{
   padding: 20px;
   font-size: 15px;
   text-align: center;
-  justify-content: center;
-  display: flex;
+  float: left;
   
 
 }
@@ -52,9 +51,15 @@ body{
   padding: 10px;
   margin-top: 20px;
   width: 100%;
-  border: 1px solid black;
-  margin-right: 10px;
+  margin-right: auto;
+  margin-left:auto;
 
+}
+.entry-card p{
+  font-size: 18px;
+  text-align: left;
+  float: left;
+  
 }
 .side-card{
   background-color: white;
@@ -80,7 +85,11 @@ body{
   color: black;
   font-size: 20px;
 }
+.entry-card img{
+  margin-right: auto;
+  margin-left: auto;
 
+}
 nav a {
 
   color: black;
@@ -134,4 +143,16 @@ nav a {
   
   text-align: center;
 
+}
+
+
+@media screen and (max-width: 537px) {
+  .main-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
